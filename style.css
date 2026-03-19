@@ -158,14 +158,14 @@ h2 {
 .slides {
   display: flex;
   width: 500%;                 /* 5 slides total */
-  animation: slide 20s infinite linear;
+  animation: slide 10s infinite linear;
 }
 
 .slides img {
   width: 20%;                  /* each slide = 1/5 of track */
   flex: 0 0 20%;
   height: 500px;
-  object-fit: contain;
+  object-fit: cover;
   background: #fff;
   display: block;
 }

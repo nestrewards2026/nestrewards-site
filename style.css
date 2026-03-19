@@ -149,40 +149,34 @@ h2 {
 /* SLIDER CONTAINER */
 .slider {
   overflow: hidden;
-  border-radius: 20px;
-  margin-top: 20px;
   max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 0;
+  border-radius: 20px;
   background: #fff;
 }
 
-/* SLIDES TRACK */
 .slides {
   display: flex;
-  width: 100%; /* fixed */
-  animation: slide 20s infinite;
+  width: 500%;                 /* 5 slides total */
+  animation: slide 20s infinite linear;
 }
 
-/* IMAGES */
 .slides img {
-  flex: 0 0 100%; /* each slide = viewport width */
-  width: 100%;
+  width: 20%;                  /* each slide = 1/5 of track */
+  flex: 0 0 20%;
   height: 500px;
   object-fit: contain;
   background: #fff;
   display: block;
 }
 
-/* SLIDER ANIMATION */
 @keyframes slide {
   0%, 20%   { transform: translateX(0); }
-  25%, 45%  { transform: translateX(-100%); }
-  50%, 70%  { transform: translateX(-200%); }
-  75%, 95%  { transform: translateX(-300%); }
-  100%      { transform: translateX(-400%); }
+  25%, 45%  { transform: translateX(-20%); }
+  50%, 70%  { transform: translateX(-40%); }
+  75%, 95%  { transform: translateX(-60%); }
+  100%      { transform: translateX(-80%); }
 }
-
 /* MOBILE SWITCH */
 @media (max-width: 768px) {
   .desktop-grid {

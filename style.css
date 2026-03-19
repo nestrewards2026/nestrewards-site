@@ -34,7 +34,13 @@ body {
   margin-left: 15px;
   font-size: 14px;
 }
+.container h3 {
+  margin-top: 25px;
+}
 
+.container p {
+  line-height: 1.6;
+}
 /* HERO */
 .hero {
   text-align: center;

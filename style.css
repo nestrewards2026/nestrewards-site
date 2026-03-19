@@ -162,10 +162,10 @@ h2 {
 }
 
 .slides img {
-  width: 20%;                  /* each slide = 1/5 of track */
+  width: 100%;                  /* each slide = 1/5 of track */
   flex: 0 0 20%;
   height: 500px;
-  object-fit: fill;
+  object-fit: contain;
   background: #fff;
   display: block;
 }

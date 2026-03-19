@@ -156,27 +156,25 @@ h2 {
 
 .slides {
   display: flex;
-  width: calc(100% * 5);
-  animation: slide 18s infinite;
+  width: 500%;                 /* 5 images */
+  animation: slide 20s infinite;
 }
 
 .slides img {
   width: 100%;
-  height: auto;          /* 🔥 keep original ratio */
-  max-height: 80vh;      /* limit height */
-  object-fit: contain;   /* 🔥 NO ZOOM */
-  background: #000;      /* optional: gives app-like feel */
+  height: 500px;          /* 🔥 fixed height = smooth animation */
+  object-fit: contain;    /* no zoom */
+  background: #000;
   flex-shrink: 0;
 }
 
 /* SLIDER ANIMATION */
 @keyframes slide {
-  0%, 18% { transform: translateX(0); }
-  20%, 38% { transform: translateX(-100%); }
-  40%, 58% { transform: translateX(-200%); }
-  60%, 78% { transform: translateX(-300%); }
-  80%, 98% { transform: translateX(-400%); }
-  100% { transform: translateX(0); }
+  0%, 20% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-100%); }
+  50%, 70% { transform: translateX(-200%); }
+  75%, 95% { transform: translateX(-300%); }
+  100% { transform: translateX(-400%); }
 }
 
 /* MOBILE SWITCH */

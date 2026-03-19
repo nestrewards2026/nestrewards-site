@@ -165,7 +165,7 @@ h2 {
   width: 20%;                  /* each slide = 1/5 of track */
   flex: 0 0 20%;
   height: 500px;
-  object-fit: cover;
+  object-fit: fill;
   background: #fff;
   display: block;
 }

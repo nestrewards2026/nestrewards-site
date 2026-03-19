@@ -42,18 +42,30 @@ html {
 }
 
 /* MOBILE NAV */
+/* MOBILE NAVBAR FIX (INLINE, NOT STACKED) */
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;          /* keep in one line */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-left strong {
+    font-size: 14px;              /* shrink text */
+  }
+
+  .nav-left img {
+    height: 28px;                 /* smaller logo */
   }
 
   .nav-links {
-    margin-top: 10px;
+    display: flex;
+    gap: 10px;
   }
 
   .nav-links a {
-    margin: 0 10px 0 0;
+    margin: 0;
+    font-size: 13px;              /* smaller links */
   }
 }
 

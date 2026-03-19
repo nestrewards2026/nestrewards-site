@@ -145,6 +145,7 @@ h2 {
   display: none;
 }
 
+/* SLIDER CONTAINER */
 .slider {
   overflow: hidden;
   border-radius: 20px;
@@ -152,28 +153,39 @@ h2 {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  background: #fff; /* 🔥 remove black flash */
 }
 
+/* SLIDES TRACK */
 .slides {
   display: flex;
-  width: 500%;                 /* 5 images */
-  animation: slide 20s infinite;
+  width: 500%;
+  animation: slide 20s infinite ease-in-out;
 }
 
+/* IMAGES */
 .slides img {
   width: 100%;
-  height: 500px;          /* 🔥 fixed height = smooth animation */
-  object-fit: contain;    /* no zoom */
-  background: #000;
+  height: 500px;
+  object-fit: contain;   /* no zoom */
+  background: #fff;      /* 🔥 no dark background */
   flex-shrink: 0;
 }
 
 /* SLIDER ANIMATION */
 @keyframes slide {
-  0%, 20% { transform: translateX(0); }
-  25%, 45% { transform: translateX(-100%); }
-  50%, 70% { transform: translateX(-200%); }
-  75%, 95% { transform: translateX(-300%); }
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+
   100% { transform: translateX(-400%); }
 }
 

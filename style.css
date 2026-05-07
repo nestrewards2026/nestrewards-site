@@ -167,7 +167,7 @@ h2 {
 .slides img {
   width: 20%;           /* 20% of the 500% track = one container width */
   flex: 0 0 20%;        /* do not grow or shrink */
-  height: 860px;        /* fixed height for portrait phone screenshots */
+  height: 560px;        /* fixed height for portrait phone screenshots */
   object-fit: cover;    /* fill the box, crop edges if needed */
   object-position: top; /* keep the top of the screenshot visible */
   display: block;

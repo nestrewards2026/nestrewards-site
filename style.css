@@ -343,3 +343,127 @@ h2 {
     font-size: 20px;
   }
 }
+/* BLOG PAGE */
+.blog-container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* BLOG TITLE */
+.blog-container h1 {
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.2;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #1B5E20, #2E7D32);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* SECTION HEADINGS */
+.blog-container h2 {
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #1B5E20;
+}
+
+/* PARAGRAPHS */
+.blog-container p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* LISTS */
+.blog-container ul {
+  padding-left: 22px;
+  margin-bottom: 25px;
+}
+
+.blog-container li {
+  margin-bottom: 12px;
+  color: #374151;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* BLOCKQUOTE */
+.blog-container blockquote {
+  margin: 25px 0;
+  padding: 18px 22px;
+  background: #F1F8F2;
+  border-left: 5px solid #2E7D32;
+  border-radius: 12px;
+  color: #1B5E20;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* STRONG TEXT */
+.blog-container strong {
+  color: #1B5E20;
+}
+
+/* BLOG IMAGE */
+.blog-banner {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  max-height: 420px;
+}
+
+/* BLOG META */
+.blog-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.blog-tag {
+  background: #E8F5E9;
+  color: #1B5E20;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .blog-container {
+    margin: 20px 15px;
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .blog-container h1 {
+    font-size: 34px;
+  }
+
+  .blog-container h2 {
+    font-size: 26px;
+  }
+
+  .blog-container p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .blog-container li {
+    font-size: 16px;
+  }
+
+  .blog-banner {
+    max-height: 240px;
+  }
+}
